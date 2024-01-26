@@ -65,6 +65,8 @@ function handleSearchSubmit(event){
     searchCity(searchInput.value);
 }
 
+function getForecast(city)
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
