@@ -68,10 +68,12 @@ main{
     
 }
 
-.weather-app-icon{
-    width:80px;
+.weather-forecast-icon{
+    width:88px;
     height:88px;
     margin-top: 22px;
+    display: block;
+    margin: 0 auto;
 
 }
 
@@ -100,6 +102,8 @@ main{
 .weather-forecast {
     margin-top: 20px;
     text-align: center;
+    display:flex;
+    justify-content: space-between;
     
 }
 
@@ -108,13 +112,16 @@ main{
     opacity:0.5;
 }
 
+
 .weather-forecast-temperature{
     font-size: 13px;
 
 }
 
-.weather-forecast-temperature-min {
+.weather-forecast-temperature-min{
     opacity: 0.6;
+
+    
 }
 
 
