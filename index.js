@@ -65,7 +65,38 @@ function handleSearchSubmit(event){
     searchCity(searchInput.value);
 }
 
+
+function displayForecast() {
+let days = ["Tue", "Wed", "Thur", "Frid", "Sat", "Sun"];
+let forecastHtml = "";
+
+days.forEach(function (day){
+
+forecastHtml = 
+   forecastHtml +
+   `
+    <div class="weather-forecast-day">
+    <div class="weather-forecast-date">Tue</div>
+    <div class="weather-forecast-icon">🌧</div>
+     <div class="weather-forecast-temperatures">
+     <div class="weather-forecast-temperature-max">
+     <strong>18°</strong>
+     </div>
+     <div class="weather-app-temperature-min">12°</div>        
+ </div> 
+     </div>  
+
+`;
+});
+
+let forecast = document.querySelector("#forecast");
+forecastElement.innerHTML = forecastHtml;
+}
+
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
+
 searchCity("La Villatte");
+displayForecast();
